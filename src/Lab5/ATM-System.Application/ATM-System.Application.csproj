@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Workshop5.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Itmo.Dev.Platform.Postgres" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ATM-System.Application.Abstractions\ATM-System.Application.Abstractions.csproj" />
+      <ProjectReference Include="..\ATM-System.Application.Contracts\ATM-System.Application.Contracts.csproj" />
+      <ProjectReference Include="..\ATM-System.Infrastructure.DataAccess\ATM-System.Infrastructure.DataAccess.csproj" />
+      <ProjectReference Include="..\ATM-System.Presentation.Console\ATM-System.Presentation.Console.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="SyncServices\" />
+    </ItemGroup>
+
+</Project>
